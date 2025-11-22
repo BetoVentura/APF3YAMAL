@@ -20,6 +20,8 @@ jobs:
       Apellido: "Cconislla Ventura"
       Edad: 28
 
+      Titulo: "Presentacion"
+      Minombre: "Hector Cconislla Ventura 28"
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -44,3 +46,10 @@ jobs:
           echo "La variable Nombre es: ${{ env.Nombre }}"
           echo "La variable Apellido es: ${{ env.Apellido }}"
           echo "La variable Edad es: ${{ env.Edad }}"
+      
+      # Mi primer Step
+      - name: Mi primer impresion de STEP
+        run: |
+          echo "Mi primer impresion de Titulo es: ${{ env.Titulo }}"
+          echo "Mi primer impresion de Minombre es: ${{ env.Minombre }}"
+          
