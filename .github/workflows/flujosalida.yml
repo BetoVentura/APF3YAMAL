@@ -53,3 +53,7 @@ jobs:
           echo "Mi primer impresion de Titulo es: ${{ env.Titulo }}"
           echo "Mi primer impresion de Minombre es: ${{ env.Minombre }}"
           
+      # Mi Segundo Step
+      - name: Datos Generales
+        run: |
+          echo Carrera: Ingenieria de Sistemas.   
