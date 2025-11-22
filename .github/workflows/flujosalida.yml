@@ -22,6 +22,10 @@ jobs:
 
       Titulo: "Presentacion"
       Minombre: "Hector Cconislla Ventura 28"
+
+      user: ${{ secrets.User }}
+      password: ${{ secrets.Password }}
+      
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -57,3 +61,9 @@ jobs:
       - name: Datos Generales
         run: |
           echo Carrera: Ingenieria de Sistemas.   
+      
+      # Impresion de variables Secretas
+      - name: Impresion de variables Secretas
+        run: |
+          echo "El usuario es: ${{ secrets.User }}"
+          echo "La contraseña es: ${{ secrets.Password }}"
