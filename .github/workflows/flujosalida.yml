@@ -67,3 +67,11 @@ jobs:
         run: |
           echo "El usuario es: ${{ secrets.User }}"
           echo "La contraseña es: ${{ secrets.Password }}"
+
+      # Impresion de Variables Abiertas
+      - name: Impresion de variables Abiertas
+        run: |
+          echo Imprimir variable abiertas: ${{ vars.VERSION_DE_MI_PROYECTO }}"
+          echo "La variable Nombre es: ${{ env.Nombre }}"
+          echo "La variable Apellido es: ${{ env.Apellido }}"
+          echo "La variable Edad es: ${{ env.Edad }}"
